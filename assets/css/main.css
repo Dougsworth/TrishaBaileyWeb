@@ -4606,3 +4606,69 @@ ul li .descr::before {
 
 /* Add additional responsive styles for .journey-title and .journey-intro as necessary */
 /* Timeline Styles */
+/* Centering the button on the page */
+.heartcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-button {
+  font-size: 24px;
+  color: #db2763;
+  cursor: pointer;
+  background: transparent; /* Ensures no background */
+  border: 0; /* Removes any border */
+  outline: none; /* Removes the outline that might appear on focus */
+  box-shadow: none; /* Removes any box shadow that might appear as a border */
+  padding: 10px;
+  transition: transform 0.2s ease; /* For a nice scaling effect on hover */
+}
+
+.heart-button:hover {
+  transform: scale(1.1); /* Slightly increases size on hover */
+  cursor: pointer;
+  background: transparent; /* Ensures no background */
+  border: 0; /* Removes any border */
+  outline: none; /* Removes the outline that might appear on focus */
+  box-shadow: none; /* Removes any box shadow that might appear as a border */
+  padding: 10px;
+}
+
+/* You might also need to reset button styling for some browsers */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
